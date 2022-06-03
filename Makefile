@@ -20,7 +20,6 @@ clean:
 	rm --force *.tar.gz
 	rm --force --recursive tests/testthat/_snaps
 	rm --force NAMESPACE
-	rm --force coverage.xml
 
 coverage: setup
 	Rscript tests/testthat/coverage.R
