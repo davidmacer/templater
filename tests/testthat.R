@@ -1,4 +1,3 @@
 library(testthat)
-library(SeleccionAnalista2022)
-
-test_check("SeleccionAnalista2022")
+library(r_template)
+test_check("r_template")
