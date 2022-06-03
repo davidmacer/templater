@@ -1,4 +1,4 @@
-Package: r_template
+Package: templater
 Title: Template for R projects
 Authors@R: c(
     person(given = "Ciencia de Datos",
