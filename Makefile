@@ -11,8 +11,8 @@ init: setup tests
 check:
 	R -e "library(styler)" \
       -e "resumen <- style_dir('R')" \
-      -e "resumen <- rbind(resumen, style_dir('src'))" \
       -e "resumen <- rbind(resumen, style_dir('tests'))" \
+      -e "resumen <- rbind(resumen, style_dir('tests/testthat'))" \
       -e "any(resumen[[2]])" \
       | grep FALSE
 
