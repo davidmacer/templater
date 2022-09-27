@@ -1,4 +1,4 @@
-init: setup tests
+all: check coverage
 
 .PHONY: \
     check \
