@@ -5,6 +5,8 @@ init: setup tests
     clean \
     coverage \
     format \
+    init \
+    install \
     setup \
     tests
 
@@ -30,7 +32,11 @@ format:
       -e "style_dir('tests')" \
       -e "style_dir('tests/testthat')"
 
-setup: clean
+init: setup tests
+
+setup: clean install
+
+install:
 	R -e "devtools::document()" && \
     R CMD build . && \
     R CMD check templater_0.1.0.tar.gz && \
