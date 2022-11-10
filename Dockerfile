@@ -1,2 +1,2 @@
-FROM islasgeci/base:latest
+FROM islasgeci/base:1.0.0
 COPY . /workdir
