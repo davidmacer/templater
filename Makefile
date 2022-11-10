@@ -23,7 +23,7 @@ clean:
 	rm --force --recursive tests/testthat/_snaps
 	rm --force NAMESPACE
 
-coverage: setup
+coverage: setup tests
 	Rscript tests/testthat/coverage.R
 
 format:
